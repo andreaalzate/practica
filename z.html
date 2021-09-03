@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>a</title>
+</head>
+<style>
+	.cuadro{
+		position: absolute;
+		top: 10px;
+		left: 400px;
+		width: 600px;
+		height: 200px;
+		border: 1px solid black;
+	}
+	.cuadro2{
+		position: absolute;
+		top: 40px;
+		left: 430px;
+		width: 250px;
+		height: 100px;
+		border: 1px solid black;
+	}
+	.cuadro3{
+		position: absolute;
+		top: 40px;
+		left: 780px;
+		width: 100px;
+		height: 100px;
+	}
+	.boton1{
+		position: absolute;
+		top: 180px;
+		left: 500px;
+		width: 50px;
+		height: 50px;
+		background: black;
+		border-radius: 80px;
+		color: white;
+	}
+	.boton2{
+		position: absolute;
+		top: 180px;
+		left: 800px;
+		width: 50px;
+		height: 50px;
+		background: black;
+		border-radius: 80px;
+		color: white;
+	}
+	.cuadro4{
+		position: absolute;
+		top: 100px;
+		left: 1px;
+		width: 100px;
+		height: 200px;
+		border: 1px solid black;
+		color: black;
+		display: none;
+	}
+	.cuadro5{
+		position: absolute;
+		top: 100px;
+		left: 1px;
+		width: 100px;
+		height: 200px;
+		border: 1px solid black;
+		color: black;
+		display: none;
+	}
+	.c{
+		position: absolute;
+		top: 10px;
+		left: 300px;
+		width: 800px;
+		height: 600px;
+		border: 1px solid black;
+	}
+</style>
+<body  onkeypress="t1()">
+	<div class="c"></div>
+<div class="cuadro"><center> CHOCOLATE </center></div>
+<div class="cuadro2" >El chocolate, originalente es cacao, hay quienes les gusta así, a otros les gusta el dulce en sí, en mi caso soy amante a este.
+</div>
+<div class="cuadro3"><img src="chocolate.jpg"> </div>
+<div class="boton1" onclick="sig()"><center>1</center>
+	<div class="cuadro4" id="c4">El chocolate ​ es el alimento que se obtiene mezclando azúcar con dos productos que derivan de la manipulación de las semillas del cacao: </div>
+</div>
+<div class="boton2" onclick="sig2()"><center>2</center>
+<div class="cuadro5" id="c5">El chocolate nos hace muy felices. ...
+El Cacao puede evitar la caries dental. ...
+</div></div>
+<script>
+	function sig(){
+		c4.style.display="block";
+	}
+	function sig2(){
+		c5.style.display="block";
+	}
+	function t1(){
+		if(event.code=="KeyA"){
+			c4.innerHTML="la masa del cacao y la manteca de cacao.";
+			c5.innerHTML="Los Mayas y Aztecas utilizaban granos de cacao como moneda";
+
+			}
+	}
+	
+</script>
+
+</body>
+</html>
